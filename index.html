@@ -232,7 +232,45 @@
                   <nav class="header-dropdown__nav">
                    
                    <style>
-                    .header-dropdown__link:hover {background-color: #e7e8e9; border-radius: 16px;}
+                   /* .header-dropdown__link:hover {background-color: #e7e8e9; border-radius: 16px;}*/
+                 .header-dropdown__link {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+    counter-increment: solution-item;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 24.75rem;
+    margin-bottom: 0.4rem;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--color-grayslace-gray);
+    border: 0.05rem solid var(--color-grayslace-black-10);
+    border-radius: 1.5rem;
+}
+                 
+                 
+                        .header-dropdown__link:hover {
+       
+        color: var(--color-grayslace-gray);
+        background-color: var(--color-primary-red);
+        border-color: var(--color-primary-red);
+   
+}
+                  
+                 
+                 
+                 
+                 
+                 
+                 
+                 
                    </style> <a
                       href="#"
                       class="header-dropdown__link"
