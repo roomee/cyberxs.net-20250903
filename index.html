@@ -185,7 +185,7 @@
               <div class="header-dropdown__content">
                 <div class="header-dropdown__section">
                   <span class="header-dropdown__heading"
-                    >Cybersecurity Solutions</span
+                    >Cybersecurity </span
                   >
                   <nav class="header-dropdown__nav">
                     <a
@@ -227,7 +227,7 @@
                 </div>
                 <div class="header-dropdown__section">
                   <span class="header-dropdown__heading"
-                    style="width: max-content;">Forensics &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Solutions</span
+                    style="width: max-content;">Forensics  </span
                   >
                   <nav class="header-dropdown__nav">
                    
@@ -255,19 +255,41 @@
     border-radius: 1.5rem;
 }
                  
-                 
+                   -->
+<style>
                         .header-dropdown__link:hover {
        
-        color: var(--color-grayslace-gray);
-        background-color: var(--color-primary-red);
-        border-color: var(--color-primary-red);
+        /*color: var(--color-grayslace-gray);*/
+        /*background-color: var(--color-primary-red);*/
+        /*border-color: var(--color-primary-red);*/
    
 }
      </style> 
 
+<style>
+.header-dropdown__link {
+    position: relative;
+    padding-left: 20px; /* space for the rectangle */
+}
+
+/* Vertical rectangle on hover */
+.header-dropdown__link:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;           /* thickness of the rectangle */
+    height: 16px;         /* height of the rectangle */
+    background-color: var(--color-primary-red); /* color */
+    border-radius: 0px;   /* optional: rounded edges */
+}
+</style>
 
 
-                   -->
+
+
+                 
                    <a 
                       href="#"
                       class="header-dropdown__link"
@@ -280,7 +302,7 @@
 
                 <div class="header-dropdown__section">
                   <span class="header-dropdown__heading"
-                    >IT & Infrastructure Solutions</span
+                    >IT & Infrastructure</span
                   >
                   <nav class="header-dropdown__nav">
                     <a
@@ -392,7 +414,7 @@
                     <a
                       href="#"
                       class="header-dropdown__link"
-                      data-wpel-link="internal"
+                      data-wpel-l ink="internal"
                       >Cobalt Strike</a
                     >
                     <a
@@ -2051,7 +2073,7 @@
         <div class="section-about__trigger"></div>
       </section>
 
-      <section class="section section-news animation-trigger">
+      <!-- <section class="section section-news animation-trigger">
         <div class="container">
           <div class="section__header">
             <span class="section__subheading animated-subheading"> NEWS </span>
@@ -2308,7 +2330,7 @@
             ></div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <div id="form-demo" class="section-partnership-box">
         <section class="section section-partnership animation-trigger">
@@ -3686,7 +3708,7 @@
                 type="text"
                 class="form__field required"
                 name="name"
-                placeholder="Ваше Ім'я та Прізвище"
+                placeholder="Full Name"
               />
               <span class="form__error-message"
                 >Please check your full name - it must be valid.</span
@@ -3728,7 +3750,7 @@
                 type="text"
                 class="form__field form__field--area required"
                 name="subject"
-                placeholder="Тема"
+                placeholder="Message"
               ></textarea>
               <span class="form__error-message"
                 >Please check the subject - it must be valid.</span
